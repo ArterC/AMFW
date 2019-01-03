@@ -1,0 +1,34 @@
+//class Header
+//{
+//	gameType =  COOP; // Game type
+//	minPlayers =  1; // minimum number of players the mission supports
+//	maxPlayers = 64; // maximum number of players the mission supports
+//};
+
+//author			= "101st AB";
+//OnLoadName		= "101st AB Mission";
+//OnLoadMission	= "101st AB Mission";
+//briefingName    = "101st AB Mission";
+//loadScreen		= "images\loadScreen.paa";
+
+//respawn=3;
+//respawnOnStart = -1;
+//respawnDelay = 45;
+//respawnTemplates[] = { "MenuPosition" };
+
+//disabledAI = 0; 
+//0: disabled - 1: enabled. Default: 0
+
+class CfgFunctions
+{
+    #include "AMFW\CfgFunctions.hpp"
+}
+
+// AMFW - Include Configs
+#include "AMFW\LoadoutsManager\loadouts.hpp"
+// AMFW - Give loadouts on unit init 
+class Extended_Init_EventHandlers {
+    class CAManBase {
+		init = "_unit = _this select 0; [""BLUFOR_101_OCP"", _unit] call AMFW_LM_fnc_equipLoadoutByClassname;";
+    };
+};
