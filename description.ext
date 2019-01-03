@@ -1,23 +1,23 @@
-//class Header
-//{
-//	gameType =  COOP; // Game type
-//	minPlayers =  1; // minimum number of players the mission supports
-//	maxPlayers = 64; // maximum number of players the mission supports
-//};
+class Header
+{
+	gameType =  COOP; // Game type
+	minPlayers =  1; // minimum number of players the mission supports
+	maxPlayers = 64; // maximum number of players the mission supports
+};
 
-//author			= "101st AB";
-//OnLoadName		= "101st AB Mission";
-//OnLoadMission	= "101st AB Mission";
-//briefingName    = "101st AB Mission";
-//loadScreen		= "images\loadScreen.paa";
+author			= "101st AB";
+OnLoadName		= "101st AB Mission";
+OnLoadMission	= "101st AB Mission";
+briefingName    = "101st AB Mission";
+loadScreen		= "images\loadScreen.paa";
 
-//respawn=3;
-//respawnOnStart = -1;
-//respawnDelay = 45;
-//respawnTemplates[] = { "MenuPosition" };
+respawn=3;
+respawnOnStart = -1;
+respawnDelay = 45;
+respawnTemplates[] = { "MenuPosition" };
 
-//disabledAI = 0; 
-//0: disabled - 1: enabled. Default: 0
+disabledAI = 0; 
+0: disabled - 1: enabled. Default: 0
 
 class CfgFunctions
 {
